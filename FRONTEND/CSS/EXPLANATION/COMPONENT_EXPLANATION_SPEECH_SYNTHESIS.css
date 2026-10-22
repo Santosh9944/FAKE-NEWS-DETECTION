@@ -1,0 +1,82 @@
+/* ===========================
+   EXPLANATION CONTROLS ROW (OUTSIDE THE BOX)
+   =========================== */
+.explanation-controls-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: -32px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+/* SLIDER LABELS AND SLIDERS */
+.slider-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #181a24;
+  border-radius: 20px;
+  padding: 8px 18px;
+  border: 2px solid #0ff;
+  box-shadow: 0 2px 12px #0ff2;
+  min-width: 160px;
+  max-width: 220px;
+  flex: 1 1 0;
+}
+.slider-label i {
+  font-size: 1.3rem;
+  color: #0ff;
+  min-width: 26px;
+  text-align: center;
+}
+.voice-slider {
+  width: 100%;
+  accent-color: #0ff;
+  background: transparent;
+  margin: 0;
+  height: 6px;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: 0 1px 8px #0ff3;
+  transition: accent-color 0.2s;
+}
+
+/* REMOVE SLIDER VALUE LABELS */
+.slider-value-label {
+  display: none;
+}
+
+.speak-explanation-btn-wide {
+  min-width: 160px;
+  height: 48px;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #00ffe0, #ff00cc);
+  box-shadow: 0 0 15px #0ff, 0 0 30px #f0f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s, background 0.4s, color 0.4s, box-shadow 0.3s;
+  margin: 18px auto 0 auto;
+}
+
+.speak-explanation-btn-wide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0ff, 0 0 40px #f0f;
+}
+
+.speak-explanation-btn-wide:focus {
+  outline: 2px solid #0ff;
+  outline-offset: 2px;
+  background: linear-gradient(45deg, #00ffe0, #ff00cc);
+  color: #fff;
+}

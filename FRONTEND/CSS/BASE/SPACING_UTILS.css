@@ -1,0 +1,18 @@
+/* ===========================
+   STRUCTURED VERTICAL SPACING BETWEEN MAIN COMPONENTS
+   =========================== */
+
+/* VERTICAL SPACING BELOW EACH MAJOR UI BLOCK */
+.model-select-row,
+.textarea-container,
+#resultContainer,
+.explanation-area,
+.action-buttons {
+  margin-bottom: 32px;
+}
+
+/* TOP MARGIN FOR THE FIRST MAIN CONTAINER */
+.textarea-container {
+  margin-top: 24px;
+}
+

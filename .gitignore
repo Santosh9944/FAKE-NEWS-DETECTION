@@ -1,0 +1,22 @@
+# VENV
+VENV/
+__pycache__/
+*.py[cod]
+
+# DATA / MEDIA/ METRICS
+DATA/
+FRONTEND/BACKGROUND/
+EXPORTS/
+
+# SENSITIVE FILES
+API/UTILS/.env
+
+# IDE FILES
+.vscode/
+.idea/
+
+# .PEM FILE [EC2]
+DaRkSouL.pem
+
+# FUTURE WORKS 
+FUTURE WORKS

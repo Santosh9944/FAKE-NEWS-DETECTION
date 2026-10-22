@@ -1,0 +1,143 @@
+/* ===========================
+   EXPLANATION AREA OUTER CONTAINER
+   =========================== */
+.explanation-area {
+  max-width: 700px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ===========================
+   EXPLANATION BOX CONTAINER
+   =========================== */
+.explanation-box-container {
+  position: relative;
+  background: #111;
+  border-radius: 18px;
+  padding: 30px 24px 30px 24px;
+  box-shadow: 0 0 18px #0ff, 0 0 32px #0ff2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s,
+    opacity 0.25s;
+  opacity: 1;
+}
+
+/* ===========================
+   EXPLANATION LABEL
+   =========================== */
+.explanation-label {
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* ===========================
+   EXPLANATION BOX (READONLY TEXTAREA)
+   =========================== */
+.explanation-box {
+  width: 100%;
+  background: transparent;
+  color: #0ff;
+  border: none;
+  resize: vertical;
+  font-size: 1.1rem;
+  min-height: 90px;
+  outline: none;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  font-style: italic;
+  transition: background 0.3s, color 0.3s, border 0.3s, box-shadow 0.6s;
+  box-sizing: border-box;
+  transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: pre-line;
+  padding: 5px 18px;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   FILLED STATE FOR EXPLANATION BOX
+   =========================== */
+.explanation-box.filled {
+  box-shadow: 0 0 20px #0ff8;
+}
+
+/* ===========================
+   EXPLANATION LOADER (BASE STYLES)
+   =========================== */
+.explanation-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  font-size: 1.1rem;
+  color: #0ff;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  box-shadow: 0 0 20px #0ff8;
+}
+
+/* HIDE LOADER WHEN NEEDED */
+.explanation-loader.hidden {
+  display: none;
+}
+
+.explanation-loader .loader {
+  margin-right: 12px;
+}
+
+/* ===========================
+   ANIMATED GRADIENT FOR LOADER
+   =========================== */
+.gradient-animated {
+  background: linear-gradient(90deg, #073042, #0ff, #073042);
+  background-size: 200% 200%;
+  animation: gradient-move 2.5s linear infinite alternate;
+  animation-fill-mode: both;
+}
+
+/* ===========================
+   SUCCESS ANIMATION FOR EXPLANATION AREA
+   =========================== */
+.explanation-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #0ff;
+  opacity: 0;
+  animation: pulse-glow 1.2s infinite alternate,
+    fade-in-check 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ===========================
+   SUCCESS STATE: ANIMATED GRADIENT BACKGROUND
+   =========================== */
+.explanation-success-bg {
+  border-radius: 12px;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ANIMATED GRADIENT FOR SUCCESS STATE */
+.gradient-success {
+  background: linear-gradient(90deg, #555555, #333333, #555555);
+  background-size: 200% 200%;
+  animation: gradient-move 2.5s linear infinite alternate;
+  animation-fill-mode: both;
+}

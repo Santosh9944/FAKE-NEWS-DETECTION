@@ -1,0 +1,104 @@
+/* ===========================
+   MODAL AND GENERAL UI ANIMATIONS
+   =========================== */
+
+/* FADE-IN ANIMATION FOR MODAL WINDOWS (SMOOTHLY INCREASES OPACITY) */
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* FADE-IN UP ANIMATION FOR ELEMENTS APPEARING FROM BELOW (RISES AND FADES IN) */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* FADE-IN DOWN ANIMATION FOR ELEMENTS DROPPING FROM ABOVE (DROPS AND FADES IN) */
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* BOUNCE ANIMATION FOR SCROLL INDICATOR OR ICONS (JUMPS UP AND DOWN) */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* PULSE-GLOW ANIMATION FOR CONFIDENCE BAR ICONS (GLOWS IN AND OUT) */
+@keyframes pulse-glow {
+  0% {
+    filter: drop-shadow(0 0 6px #0ff8);
+  }
+  100% {
+    filter: drop-shadow(0 0 24px #0ff);
+  }
+}
+
+/* FADE-IN ANIMATION FOR RESULT CONTAINER (SLIDES UP AND FADES IN) */
+@keyframes fadeInResult {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SPIN ANIMATION FOR LOADER/SPINNER (360 DEGREE ROTATION) */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* FADE-IN ANIMATION FOR CHECKMARK IN EXPLANATION LOADER (FADES IN TO FULL OPACITY) */
+@keyframes fade-in-check {
+  to {
+    opacity: 1;
+  }
+}
+
+/* GRADIENT ANIMATION FOR EXPLANATION LOADER (MOVES GRADIENT FROM LEFT TO RIGHT) */
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* BAR GLINT ANIMATION FOR MOVING LIGHT EFFECT ACROSS PROGRESS BARS */
+@keyframes bar-glint-wrapper {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}

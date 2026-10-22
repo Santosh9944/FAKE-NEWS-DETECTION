@@ -1,0 +1,24 @@
+/* ===========================
+   LIGHT MODE: NAVBAR, SCROLL BAR
+   =========================== */
+
+/* LIGHT MODE NAVBAR APPEARANCE */
+body.light-mode .navbar {
+  background: linear-gradient(
+    135deg,
+    #888888 0%,
+    #757575 20%,
+    #919191 40%,
+    #aaaaaa 60%,
+    #bbbbbb 80%,
+    #c5c5c5 100%
+  );
+  color: #181b20;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+/* LIGHT MODE SCROLL INDICATOR COLOR */
+body.light-mode .scroll-indicator {
+  color: #0cf;
+}
